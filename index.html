@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://use.fontawesome.com/62e43a72a9.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="logo-header" src="/assets/Logo2.svg" alt="Logo da marca" />
+      <nav class="menu-header">
+        <a class="menu-header-item">Team</a>
+        <a class="menu-header-item">Resources</a>
+        <a class="menu-header-item">Services</a>
+        <a class="menu-header-item">About</a>
+      </nav>
+      <button class="btn-login">Login</button>
+    </header>
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+          <button
+              class="navbar-toggler"
+              type="button"
+              onclick="handleMobileNavBar()"
+          >
+              <i class="fa-thin fa-bars"></i>
+          </button>
+          <img
+          class="mobile-logo-header"
+          src="/assets/Logo2.svg"
+          alt="Logo do facebook"
+        />
+      </div>
+  </nav>
+  <div  id="navbarToggleExternalContent2">
+      <ul class="bg-light shadow-3 py-2 px-3">
+          <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Team</li>
+          <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">About</li>
+          <li class="btn btn-link btn-block m-0 p-2 text-start text-dark">Services</li>
+      </ul>
+  </div>
+    <main>
+      <section class="about-section">
+        <div class="description">
+          <h1 class="description-title">Find The Next Place to Visit</h1>
+          <p class="paragraph">
+            Destiny trips is a platform that suggests places
+
+            <br />
+            of tourist visits in greater São Paulo
+          </p>
+
+          <button class="btn-contact-us">Contact Us</button>
+        </div>
+        <div>
+          <img
+            src="/assets/tourists.svg"
+            alt="Imagem de turistas"
+            class="image-tourists"
+          />
+        </div>
+      </section>
+      <section class="explore-section">
+        <div class="explorer-description">
+          <h2>Explore Top Destinations</h2>
+          <p class="paragraph">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry.
+          </p>
+        </div>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="assets/MASP.jpg" alt="Contact us" class="cover" />
+              </div>
+
+              <h3>Museum of Art of São Paulo Assis</h3>
+              <span>Large collection by renowned artistst</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img
+                  src="assets/ibirapuera.jpg"
+                  alt="Contact us"
+                  class="cover"
+                />
+              </div>
+
+              <h3>Ibirapuera Park</h3>
+              <span>Cultural center & green recreation area</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img src="assets/market.jpg" alt="Contact us" class="cover" />
+              </div>
+
+              <h3>Mercado Municipal de São Paulo</h3>
+              <span>Exotic fruit & vegetable market</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img
+                  src="assets/pinacoteca.jpg"
+                  alt="Contact us"
+                  class="cover"
+                />
+              </div>
+
+              <h3>Pinacoteca de São Paulo</h3>
+              <span>Established museum for Brazilian artwork</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img
+                  src="assets/pinacoteca.jpg"
+                  alt="Contact us"
+                  class="cover"
+                />
+              </div>
+
+              <h3>Pinacoteca de São Paulo</h3>
+              <span>Established museum for Brazilian artwork</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img
+                  src="assets/ibirapuera.jpg"
+                  alt="Contact us"
+                  class="cover"
+                />
+              </div>
+
+              <h3>Ibirapuera Park</h3>
+              <span>Cultural center & green recreation area</span>
+            </div>
+            <div class="swiper-slide">
+              <div class="icon">
+                <img
+                  src="assets/ibirapuera.jpg"
+                  alt="Contact us"
+                  class="cover"
+                />
+              </div>
+
+              <h3>Ibirapuera Park</h3>
+              <span>Cultural center & green recreation area</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section class="form-section">
+          <div class="form-box">
+            <p class="title-form">Get Acess to exclusive Updates</p>
+            <div class="form-wrapper">
+              <input type="email" id="fname" name="firstname" placeholder="Enter your email">
+              <button class="btn-form"><i class="fa fa-arrow-right" ></i> </button>
+            </div>
+          </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-informations">
+        <p>About</p>
+        <p>Policy</p>
+        <p>Terms</p>
+      </div>
+      <div class="logo-description">
+        <img
+          class="logo-footer"
+          src="/assets/Logo2.svg"
+          alt="Logo do facebook"
+        />
+          <p class="footer-description">Be sure to take a look at our Terms of Use </br>and Policy</p>
+      </div>
+      <div class="icons">
+        <img
+          class="logo-facebook"
+          src="/assets/facebook.svg"
+          alt="Logo da marca"
+        />
+        <img class="logo-gmail" src="/assets/gmail.svg" alt="Logo do gmail" />
+      </div>
+    </footer>
+    <script src="/script.js"></script>
+  </body>
+</html>
