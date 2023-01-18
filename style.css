@@ -173,6 +173,10 @@ body {
   .header {
     justify-content: center;
   }
+
+  main .our-differential {
+    display: none;
+  }
   footer .icons {
     display: none;
   }
@@ -185,7 +189,7 @@ body {
 
 .explore-section {
   padding: 2rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   margin-top: 3.5rem;
 }
 
@@ -197,6 +201,20 @@ body {
 .explore-section-title {
   display: grid;
   justify-items: center;
+}
+
+.our-differential {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.our-differential h3 {
+  font-weight: 400;
+}
+
+.our-differential p {
+  font-weight: 300;
 }
 
 .description-title {
@@ -270,6 +288,10 @@ body {
   font-size: 0.8rem;
 }
 
+.footer-informations p {
+  cursor: pointer;
+}
+
 .footer-description {
   color: var(--blue-800);
   letter-spacing: 0.001rem;
@@ -286,10 +308,12 @@ body {
 
 .logo-facebook {
   height: 1rem;
+  cursor: pointer;
 }
 
 .logo-gmail {
   height: 1rem;
+  cursor: pointer;
 }
 
 footer {
