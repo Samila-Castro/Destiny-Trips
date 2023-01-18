@@ -394,6 +394,7 @@ input::placeholder {
   padding: 0 1.5rem;
   height: 35px;
   cursor: pointer;
+  height: 3.1rem;
 }
 
 .form-wrapper {
