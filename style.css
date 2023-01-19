@@ -282,6 +282,9 @@ body {
   object-fit: cover;
 }
 
+.swiper-wrapper {
+  margin-bottom: 2.5rem;
+}
 .footer-informations {
   display: flex;
   gap: 1.5rem;
